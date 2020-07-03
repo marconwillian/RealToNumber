@@ -1,0 +1,19 @@
+{
+  "name": "realtonumber",
+  "version": "1.0.0",
+  "description": "Trancode String in Real pt-BR to Number",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marconwillian/RealToNumber.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marconwillian/RealToNumber/issues"
+  },
+  "homepage": "https://github.com/marconwillian/RealToNumber#readme"
+}
