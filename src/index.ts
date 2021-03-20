@@ -6,7 +6,7 @@ export interface OptionsRealToInt {
     useDecimal: boolean;
 }
   
-export const realToFloat = (real: string, {decimal}: OptionsRealToFloat): Number => {
+export const realToFloat = (real: string, {decimal}: OptionsRealToFloat): number => {
     let number = real;
 
     number = number.replace(/[^0-9,-]+/g,"");
@@ -15,7 +15,7 @@ export const realToFloat = (real: string, {decimal}: OptionsRealToFloat): Number
     return parseFloat(parseFloat(number).toFixed(decimal));
 };
 
-export const realToInt = (real: string, {useDecimal}: OptionsRealToInt): Number => {
+export const realToInt = (real: string, {useDecimal}: OptionsRealToInt): number => {
     let number: string = real;
     let integer: number;
 
