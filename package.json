@@ -1,6 +1,6 @@
 {
   "name": "realtonumber",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "Trancode String in Real pt-BR to Number",
   "main": "dist/index.js",
   "scripts": {
