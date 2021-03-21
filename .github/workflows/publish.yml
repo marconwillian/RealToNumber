@@ -32,10 +32,16 @@ jobs:
       with:
         node-version: '12.x'
         registry-url: 'https://npm.pkg.github.com'
-        scope: '@MarconWillian'
+        scope: '@marconwillian'
     - run: npm install
     - run: npm test
     - run: npm run build
+    - name: Update package.json to GitHubName
+      uses: jossef/action-set-json-field@v1
+      with:
+        file: package.json
+        field: name
+        value: '@marconwillian/realtonumber'
     - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
